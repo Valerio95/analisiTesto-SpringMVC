@@ -16,7 +16,7 @@ public int contaParole() {
 }
 
 public int contaVocali() {
-	String[] parole=testo.split(" ");
+	String[] parole=testo.toLowerCase().split(" ");
 	int count=0;
 	for (int i =0; i<parole.length;i++) {
 		char[] caratteri=	parole[i].toCharArray();
@@ -30,7 +30,7 @@ public int contaVocali() {
 }
 
 public int contaConsonanti() {
-	String[] parole=testo.split(" ");
+	String[] parole=testo.toLowerCase().split(" ");
 	int count=0;
 	for (int i =0; i<parole.length;i++) {
 		char[] caratteri=	parole[i].toCharArray();
