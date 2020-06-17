@@ -17,6 +17,9 @@ public class ContaParole {
 	public ModelAndView checkParameter(@RequestParam("testo") String testo, Model model) {
 		Gestione gestione = new Gestione(testo);
 		int risultato = gestione.contaParole();
-	return new ModelAndView("risultato", "risultato", risultato);
+		ModelAndView view = new ModelAndView("risultato");
+		view.addObject("testo", testo);
+		view.addObject("risultato", risultato);
+	return view;
 	}
 }

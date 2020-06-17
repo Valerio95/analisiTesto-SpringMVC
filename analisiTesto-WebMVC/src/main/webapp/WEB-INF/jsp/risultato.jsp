@@ -9,6 +9,8 @@
 <body>
 
 
+<br> <br>Questo era il testo da analizzare:${testo} <br> <br>
+
 <br> <br>Ecco il risultato:${risultato} <br> <br>
 
 

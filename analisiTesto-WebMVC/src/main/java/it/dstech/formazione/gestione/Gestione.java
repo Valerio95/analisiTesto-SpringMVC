@@ -21,7 +21,7 @@ public int contaVocali() {
 	for (int i =0; i<parole.length;i++) {
 		char[] caratteri=	parole[i].toCharArray();
 		for (int j=0;j<caratteri.length;j++) {
-			if (caratteri[j]=='a'||caratteri[j]=='e'||caratteri[j]=='i'||caratteri[j]=='o'||caratteri[j]=='u') {
+			if (caratteri[j]=='a'|| caratteri[j]=='e'|| caratteri[j]=='i'|| caratteri[j]=='o'|| caratteri[j]=='u') {
 				count++;
 			}
 		}
@@ -35,7 +35,7 @@ public int contaConsonanti() {
 	for (int i =0; i<parole.length;i++) {
 		char[] caratteri=	parole[i].toCharArray();
 		for (int j=0;j<caratteri.length;j++) {
-			if (caratteri[j]!='a'&&caratteri[j]!='e'&&caratteri[j]!='i'&& caratteri[j]!='o'&& caratteri[j]!='u') {
+			if (caratteri[j]!='a'&& caratteri[j]!='e'&& caratteri[j]!='i'&& caratteri[j]!='o'&& caratteri[j]!='u') {
 				count++;
 			}
 		}
